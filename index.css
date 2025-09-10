@@ -472,7 +472,7 @@ img {
 /* Hero Section */
 .hero-section {
     background: linear-gradient(135deg, var(--color-very-light-green) 0%, var(--color-white) 50%, var(--color-light-green) 100%);
-    padding: 4rem 0;
+        padding: 2rem 0;
     position: relative;
     overflow: hidden;
 }
@@ -1326,7 +1326,7 @@ img {
     
     /* Hero Section Mobile */
     .hero-section {
-        padding: 3rem 0;
+        padding: 1rem 0;
     }
     
     .hero {
@@ -1652,7 +1652,7 @@ img {
     
     /* Hero Section Small Mobile */
     .hero-section {
-        padding: 2rem 0;
+        padding: 0.5rem 0;
     }
     
     .hero-title {

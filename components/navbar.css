@@ -814,7 +814,7 @@ html, body {
 
 /* Global adjustment for hero sections to avoid breadcrumb overlap */
 .hero {
-    margin-top: 110px !important; /* Navbar (61px) + Breadcrumb (45px) + small buffer (4px) */
+    margin-top: 40px !important; /* Reduced gap above hero for desktop */
 }
 
 /* Mobile responsive breadcrumb */
@@ -833,12 +833,10 @@ html, body {
         font-size: 13px;
     }
     
-    /* Mobile hero adjustment */
-    .hero {
-        margin-top: 90px !important; /* Mobile navbar (48px) + breadcrumb (38px) + buffer (4px) */
-    }
-    
-    .main {
-        margin-top: 60px;
+        .hero {
+            margin-top: 40px !important; /* Add more space below navbar for mobile */
+        }
+        .main {
+            margin-top: 0px;
     }
 }
