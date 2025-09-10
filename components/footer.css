@@ -1,0 +1,581 @@
+/* Footer Styles - Clean Fixed Version */
+
+/* Reset and ensure proper box-sizing */
+.footer,
+.footer * {
+    box-sizing: border-box;
+}
+
+.footer {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: #ffffff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.footer-main {
+    padding: 40px 0 20px;
+    width: 100%;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: minmax(280px, 350px) 1fr minmax(280px, 350px);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: start;
+}
+
+/* Company Info Section */
+.footer-section.company-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.company-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.company-info .logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.footer-logo {
+    margin-bottom: 5px;
+}
+
+.footer-logo a {
+    text-decoration: none;
+}
+
+.footer-logo .logo-text {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #ffffff 0%, #22c55e 50%, #16a34a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-logo .logo-text:hover {
+    background: linear-gradient(135deg, #ffffff 0%, #16a34a 30%, #22c55e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transform: scale(1.05);
+}
+
+.footer-logo img {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.footer-logo img:hover {
+    transform: scale(1.05);
+}
+
+.company-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cccccc;
+    margin: 0;
+}
+
+
+/* Links Section */
+.footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 0 15px;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 15px 0;
+    text-transform: capitalize;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-link {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+    line-height: 1.4;
+}
+
+.footer-link:hover {
+    color: #22c55e;
+}
+
+/* Contact Info Section */
+.footer-section.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.contact-icon {
+    flex-shrink: 0;
+    color: #22c55e;
+    margin-top: 2px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon svg {
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+}
+
+.contact-icon svg path {
+    fill: currentColor;
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #cccccc;
+}
+
+.phone-numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.phone-link {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.phone-link:hover {
+    color: #22c55e;
+}
+
+/* Social Section */
+.social-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 5px;
+}
+
+.social-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-start;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(34, 197, 94, 0.1);
+    border: 2px solid #22c55e;
+    border-radius: 50%;
+    color: #22c55e;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: #22c55e;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.social-link svg {
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease;
+}
+
+.social-link.gmail-link svg {
+    width: 22px;
+    height: 22px;
+}
+
+.social-link svg path {
+    fill: currentColor;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    background-color: #222222;
+    border-top: 1px solid #333333;
+    padding: 20px 0;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.copyright,
+.developer-credit {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 0;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.developer-link {
+    color: #22c55e;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.developer-link:hover {
+    color: #16a34a;
+}
+
+/* Specific styles for each social platform */
+.facebook-link svg {
+    width: 11px;
+}
+
+.instagram-link svg {
+    width: 18px;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: 280px 1fr;
+        gap: 25px;
+    }
+    
+    .footer-section.contact-info {
+        grid-column: 2;
+        margin-top: 0;
+    }
+    
+    .footer-links {
+        gap: 20px;
+        padding: 0;
+    }
+
+    .company-info .logo {
+        width: 100px;
+    }
+}
+
+/* Mobile Styles - Fixed for Full Visibility */
+@media (max-width: 768px) {
+    .footer {
+        width: 100%;
+        min-height: auto;
+        overflow: visible;
+    }
+    
+    .footer-main {
+        padding: 30px 0 20px;
+        width: 100%;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        text-align: center;
+        width: 100%;
+        padding: 0 15px;
+        max-width: 100%;
+    }
+    
+    .footer-section.company-info {
+        text-align: center;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .company-info .logo {
+        width: 120px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .company-details {
+        align-items: center;
+    }
+    
+    .footer-links {
+        display: none;
+    }
+    
+    .company-description {
+        font-size: 13px;
+        line-height: 1.5;
+        text-align: center;
+        margin: 0 10px;
+    }
+    
+    .footer-section.contact-info {
+        text-align: center;
+    }
+    
+    .contact-details {
+        gap: 18px;
+        align-items: center;
+        margin: 0 15px;
+    }
+    
+    .contact-item {
+        gap: 12px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        flex-direction: row;
+    }
+    
+    .contact-icon {
+        flex-shrink: 0;
+        color: #22c55e;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contact-icon svg {
+        fill: currentColor;
+        width: 18px;
+        height: 18px;
+    }
+    
+    .contact-item p,
+    .phone-link {
+        font-size: 13px;
+        text-align: left;
+        margin: 0;
+    }
+    
+    .phone-numbers {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .social-section {
+        gap: 15px;
+        text-align: center;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .social-title {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 8px;
+        display: block;
+    }
+    
+    .social-links {
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+        display: flex;
+    }
+    
+    .social-link {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .social-link svg {
+        width: 22px;
+        height: 22px;
+    }
+    
+    .footer-bottom {
+        padding: 18px 0;
+        margin-top: 5px;
+        width: 100%;
+    }
+    
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+        display: flex;
+        padding: 0 15px;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .copyright,
+    .developer-credit {
+        font-size: 12px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Extra Small Mobile Styles */
+@media (max-width: 480px) {
+    .footer {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+    }
+    
+    .footer-main {
+        padding: 25px 0 20px;
+        width: 100%;
+    }
+    
+    .footer-content {
+        gap: 20px;
+        width: 100%;
+        padding: 0 10px;
+        max-width: 100%;
+    }
+    
+    .company-description {
+        font-size: 12px;
+        margin: 0 5px;
+    }
+    
+    .contact-item p,
+    .phone-link {
+        font-size: 12px;
+    }
+    
+    .social-links {
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .footer-bottom {
+        padding: 15px 0;
+        width: 100%;
+    }
+    
+    .footer-bottom-content {
+        padding: 0 10px;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        gap: 6px;
+        max-width: 100%;
+    }
+    
+    .copyright,
+    .developer-credit {
+        font-size: 11px;
+        line-height: 1.4;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .social-link {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .social-link svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Ensure footer is always visible and not cut off */
+body {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.main {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Dark theme adjustments */
+@media (prefers-color-scheme: dark) {
+    .footer {
+        background-color: #0a0a0a;
+    }
+    
+    .footer-bottom {
+        background-color: #000000;
+        border-top-color: #222222;
+    }
+}
