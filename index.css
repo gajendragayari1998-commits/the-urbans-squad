@@ -599,6 +599,17 @@ img {
     margin-right: auto;
 }
 
+.section-subtitle-left {
+    text-align: left;
+    font-size: var(--text-xl);
+    color: var(--color-gray-600);
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 .service-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
