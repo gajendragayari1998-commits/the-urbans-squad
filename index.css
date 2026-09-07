@@ -599,6 +599,16 @@ img {
     margin-right: auto;
 }
 
+.home-section-subtitle {
+    text-align: center;
+    font-size: var(--text-xl);
+    color: var(--color-gray-600);
+    margin-bottom: 3rem;
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .section-subtitle-left {
     text-align: left;
     font-size: var(--text-xl);
