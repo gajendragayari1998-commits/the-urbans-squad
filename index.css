@@ -600,11 +600,11 @@ img {
 }
 
 .home-section-subtitle {
-    text-align: justify;
+    text-align: center;
     font-size: var(--text-xl);
     color: var(--color-gray-600);
     margin-bottom: 3rem;
-    max-width: 1020px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
